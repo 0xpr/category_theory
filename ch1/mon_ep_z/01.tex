@@ -11,4 +11,17 @@ Find a category with an arrow which is both epi and monic, but not invertible.
 
 Let $R$ be a one object category with arrows all differentiable functions from $R$ to itself. Then, consider $x \mapsto x^3$, which is a bijective function, so it is both monic and epi, but is not invertible since $x \mapsto x^{1/3}$ is not differentiable at $0$.
 
+Another example can be constructed from the inclusion function $i: Q \rightarrow
+R$. $i$ is clearly not invertible.
+We know:
+\begin{itemize}
+    \item $i$ is continuous
+    \item Each point in $R$ is the limit point of some sequence of points in
+    $Q$, from the sequence lemma (since the closure of $Q$ is $R$).
+    \item And we know that $x_n \mapsto x \implies f(x_n) \mapsto f(x)$ if $f$
+    is continuous.
+\end{itemize}
+So, $g_1 \circ i = g_2 \circ i \implies g_1 = g_2$ for all possible $g_1$ and
+$g_2$ (as Hausdorff spaces have unique limits).
+
 \vspace{2mm}

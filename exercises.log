@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.21)  21 APR 2017 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.21)  21 APR 2017 23:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,9 +290,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 Missing character: There is no Â in font cmr10!
 Missing character: There is no § in font cmr10!
  [8])) (./ch1/mon_ep_z.tex
-[9] (./ch1/mon_ep_z/01.tex) (./ch1/mon_ep_z/02.tex) (./ch1/mon_ep_z/03.tex)
-(./ch1/mon_ep_z/04.tex [10]) (./ch1/mon_ep_z/05.tex) (./ch1/mon_ep_z/06.tex
-[11]) (./ch1/mon_ep_z/07.tex))
+[9] (./ch1/mon_ep_z/01.tex) (./ch1/mon_ep_z/02.tex) (./ch1/mon_ep_z/03.tex
+[10]) (./ch1/mon_ep_z/04.tex) (./ch1/mon_ep_z/05.tex [11])
+(./ch1/mon_ep_z/06.tex) (./ch1/mon_ep_z/07.tex))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
  [12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
@@ -322,7 +322,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on exercises.pdf (12 pages, 172318 bytes).
+Output written on exercises.pdf (12 pages, 173049 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
