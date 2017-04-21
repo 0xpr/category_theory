@@ -1,0 +1,24 @@
+\noindent
+\underline{Exercise 5}
+\vspace{2mm}
+
+Show that every natural transformation $\tau : S \xrightarrow{.} T$ defines a function (also called $\tau$)
+which sends each arrow $f: c \to c'$ of $C$ to an arrow $\tau f: Sc \to Tc'$ of $B$ in such a
+way that $Tg \circ \tau f = \tau(gf) = \tau g \circ Sf$ for each composable pair $<g, f>$. Conversely,
+show that every such function $\tau$ comes from a unique natural transformation
+with $\tau_c = \tau(1_c)$ (This gives an "arrows only" description of a natural transformation.)
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+Let $\tau(f) = T(f) \circ \tau_c = \tau_{c'} \circ S(f)$, then the relations are satisfied because the diagram is commutative. 
+
+Conversely, let there be such a $\tau$. Then, consider $c \xrightarrow{1_c} c \xrightarrow{f} c' \xrightarrow{1_{c'}} c'$. 
+
+$\tau(f \circ 1_c) = \tau(1_{c'} \circ f)$
+
+$\implies T(f) \circ \tau_c = \tau_{c'} \circ S(f)$, which is the definition of a natural transformation. The transformation is unique because $\tau$ is a function and $\tau(1_c)$ and $\tau(1_c')$ have only one value each.
+
+\vspace{2mm}

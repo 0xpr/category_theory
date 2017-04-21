@@ -1,0 +1,18 @@
+\noindent
+\underline{Exercise 2}
+\vspace{2mm}
+
+If $H$ is a fixed group, show that $G \mapsto H \times G$ defines a functor $H \times - : Grp \to Grp$,
+and that each morphism $f : H \to K$ of groups defines a natural transformation $H \times - \xrightarrow{.} K \times -$.
+
+\vspace{2mm}
+\noindent
+\emph{Proof}
+
+Let $f : H \to K$ be a morphism. Let $\phi : G \to G'$ be a morphism between two groups. Then, $(h, g) \mapsto (h, \phi(g))$ in the $H \times$ --- functor; and $(k, g) \mapsto (k, \phi(g))$ in the $K \times$ --- functor. 
+
+Now if $f$ is any morphism from $H$ to $K$, then 
+
+$(h, g) \mapsto (h, \phi(g)) \mapsto (f(h), \phi(g))$ and $(h, g) \mapsto (f(h), g) \mapsto (f(h), \phi(g))$ map to the same element, which implies that the diagram is commutative. Hence, it is a natural transformation.
+
+\vspace{2mm}

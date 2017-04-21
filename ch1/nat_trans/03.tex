@@ -1,0 +1,27 @@
+\noindent
+\underline{Exercise 3}
+\vspace{2mm}
+
+If $B$ and $C$ are groups (regarded as categories with one object each) and
+$S, T: B \to C$ are functors (homomorphisms or groups), show that there is a
+natural transformation $S \xrightarrow{.} T$ if and only if $S$ and $T$ are conjugate; i.e., if and
+only if there is an element $h \in C$ with $Tg = h(Sg)h^{-1}$ for all $g \in B$.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+Let's assume there is a natural transformation from $S \xrightarrow{.} T$. Since, there is only one object in each of the categories, there will only be one arrow in the natural transformation that we have to think about -- let's say $h \in C$. 
+
+From the natural transformation commutative condition we have: $h \circ Sg = Tg \circ h$ for all arrows $g \in B$.
+
+$ \implies Tg = h(Sg)h^{-1}$ for each $g \in B$, we can do this since the category is actually a groupoid.
+
+$ \implies h$ and $g$ are conjugate.
+
+$S$ and $T$ are conjuagte $\implies \exists h . Tg = h (Sg) h^{-1}$
+
+Since, $h \in C$, $h$ is an arrow of $C$, so we can pick this to be the arrow of the natural transformation (we can also pick $h^{-1}$).
+
+\vspace{2mm}

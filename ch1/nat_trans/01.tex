@@ -1,0 +1,20 @@
+\noindent
+\underline{Exercise 1}
+\vspace{2mm}
+
+Let $S$ be a fixed set, and $X^S$ the set of all functions $h: S \rightarrow X$. Show that $X \mapsto X^S$
+is the object function of a functor $Set \rightarrow Set$, and that evaluation $e_x : X^S \times S \xrightarrow{.} X$,
+defined by $e(h, s) = h(s)$, the value of the function $h$ at $s \in S$, is a natural transformation.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+$e_x$ forms a natural transformation among the identity functor and the functor constructed below:
+\begin{itemize}
+	\item object function: $X \mapsto X^S \times S$
+	\item arrow function: $f \mapsto (f \circ g) \times id$ for all $g \in X^S$
+\end{itemize}
+
+\vspace{2mm}

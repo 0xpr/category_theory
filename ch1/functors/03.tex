@@ -1,0 +1,53 @@
+\noindent
+\underline{Exercise 3}
+\vspace{2mm}
+
+(\textbf{a}) \emph{A functor between two preorders is a function which is monotonic}
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+A preorder is a category $P$ in which, given objects $p$ and $p'$, there is at most one arrow $p \rightarrow p'$.
+
+Monotonicity condition: $p \leq q \Longrightarrow T(p) \leq T(q)$. A functor preserves the order of the domain and codomain. Hence a functor between two preorders can be interpreted as a monotonic function. 
+
+\vspace{2mm}
+(\textbf{b}) \emph{A functor between two groups is a morphism of groups}
+
+\vspace{2mm}
+\noindent
+\emph{Proof}
+
+A group is a one object category. So there is only one object function possible. Furthermore, the functor laws correspond exactly to the group homomorphism laws, i.e., $T(f \circ g) = T(f) \circ T(g)$. This works since the arrows of the group category correspond to the elements of the group. We don't even need the functor law regarding identities, since every group has an inverse, i.e., in this case the functor is between two groupoids. 
+
+% exercise 2(c)
+\vspace{2mm}
+(\textbf{c}) \emph{If G is a group, a functor $G \rightarrow Set$ is a permutation representation
+of $G$, while $G \rightarrow Matr_K$ is a matrix representation of $G$}
+
+\vspace{2mm}
+\noindent
+\emph{Proof}
+
+Since $G$ is a one object category, the object function will map it to some set $S$ in $Set$. The arrow function will: 
+\begin{itemize}
+	\item send the identity $e$ of the group to the identity function on $S$
+	\item since every element in a group has an inverse, every function on $S$ should have an inverse too. If $a \cdot b = e$, in $G$, then since $T(a \circ b) = T(e) = id_S = T(a) \circ T(b)$. So every arrow $T(a)$ will have an inverse. So the elements of the group map to bijections from $S$ to itself.  
+\end{itemize}
+
+From the previous two points, we have by definition that a functor from $G$ to $Set$ is a permutation representation of $G$.
+
+\vspace{2mm}
+
+A functor from $G$ to $Matr_K$:
+
+\begin{itemize}
+	\item The object function will map the single object to some positive integer $n$.
+	\item The arrow function will map elements of the group to some $n \times n$ matrix, such that functor laws are satisfied. This means that it will only map to non-singular matrices, which obey the group homomorphism laws with respect to matrix multiplication.
+\end{itemize}
+
+Since, matrices are nothing but linear transformations over vector spaces, functors from $G$ to $Matr_K$ will correspond to matrix representations of $G$. 
+
+\vspace{2mm}

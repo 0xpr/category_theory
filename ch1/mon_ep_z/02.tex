@@ -1,0 +1,37 @@
+\noindent
+\underline{Exercise 2}
+\vspace{2mm}
+
+Prove that the composite of monics is monic, and likewise for epis.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+$g \circ f$ is monic if $g, f$ are monic. Let $p$ and $q$ be two functions whose codomain is the same as the domain of $g \circ f$. Then, 
+
+$(g \circ f) \circ p = (g \circ f) \circ q$
+
+$\implies g \circ (f \circ p) = g \circ (f \circ q)$
+
+$\implies f \circ p = g \circ q$ (since $g$ is monic)
+
+$\implies p = q$ (since $f$ is monic)
+
+$\implies g \circ f$ is monic.
+
+
+$g \circ f$ is epi if $g, f$ are epi. Let $p$ and $q$ be 2 functions whose domain is the same as the codomain of $g \circ f$. Then,
+
+$p \circ (g \circ f) = q \circ (g \circ f)$
+
+$\implies (p \circ g) \circ f = (q \circ g) \circ f$
+
+$\implies p \circ g = q \circ g$ (since $f$ is epi)
+
+$\implies p = q$ (since $g$ is epi)
+
+$\implies g \circ f$ is epi.
+
+\vspace{2mm}

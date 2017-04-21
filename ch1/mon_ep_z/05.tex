@@ -1,0 +1,21 @@
+\noindent
+\underline{Exercise 5}
+\vspace{2mm}
+
+In $Grp$ prove that every epi is surjective.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+Let $\phi : G \to H$ be an epi in $Grp$. Consider the order $k$ of $H / Im(\phi)$:
+
+\begin{itemize}
+	\item If $k = 2$, then we know that $Im(\phi)$ is a normal subgroup. Let $\pi : H \to H / Im(\phi)$ be the canonical map, i.e., $h \mapsto h + Im(\phi)$; and let $z : H \to H / Im(\phi)$ be the zero map. Then, $\pi \circ \phi = z \circ \phi$. But, since $\phi$ is epi, $\pi = z \implies z$ is surjective $\implies Im(\phi) = H \implies k = 1$, which is a contradiction.
+	\item If $k > 2$, then we can pick three unique cosets $Im(\phi), u + Im(\phi), v + Im(\phi)$. Let $Perm H$ be the group of all permutations of the set $H$. Define a map $\lambda \in Perm H$, such that $\lambda (xu) = xv$ and $\lambda (xv) = xu$ for all $x \in Im(f)$ and equal to the identity function everywhere else. Let $\psi: H \to Perm H$ send each $h$ to left multiplication $\psi_h$ by $h$, and let $\psi_{h}' = \lambda^{-1} \psi_h \lambda$. Then, $\psi \phi = \psi' \phi$, but $\psi \neq \psi'$, contradicting $\phi$ is epi.
+\end{itemize}
+
+Hence, from the above two points $k = 1$ is the only valid value, which implies that $\phi$ is surjective.
+
+\vspace{2mm}

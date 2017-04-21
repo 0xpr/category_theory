@@ -1,0 +1,22 @@
+\noindent
+\underline{Exercise 4}
+\vspace{2mm}
+
+Prove that there is no functor $Grp \rightarrow Ab$ sending each group $G$ to its center. 
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+Consider the symmetric groups $S_2$ and $S_3$. Let: 
+\begin{itemize}
+	\item $f : S_2 \rightarrow S_3$ be the inclusion homomorphism. Since in $S_3$ if we keep $3$ fixed, we'll find that subgroup of $S_3$ to be isomorphic to $S_2$. 
+	\item $g: S_3 \rightarrow S_2$, such that the kernel of $g$ is $A_3$.  
+	\item The center of $S_2$ is itself.
+	\item The center of $S_3$ is the trivial subgroup. 
+\end{itemize}
+
+Then $g \circ f = id_{S_2}$. Let $T_o$ be any object function which sends each group to its center. Then, $T_f(f)$ must be the zero map, as the center of $S_3$ is the trivial subgroup. Therefore, for all maps $g$ from $Z(S_3)$ to $Z(S_2)$, $T_f(g)$ must be the zero map. Hence, $T_f(g \circ f)$ will be the zero homomorphism. But functors should take identities to identities. So, we cannot construct any arrow function which will obey the functor rules. 
+
+\vspace{2mm}

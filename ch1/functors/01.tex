@@ -1,0 +1,32 @@
+\noindent
+\underline{Exercise 1}
+\vspace{2mm}
+
+Show how each of the following constructions can be regarded as a functor:
+
+\vspace{2mm}
+\textbf{(a)} \emph{The field of quotients of an integral domain}
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+Let $IntDom$ be a category with integral domains as objects and \textbf{injective} homomorphisms as arrows; and $Field$ be the category of fields, with arrows obeying ring homomorphism rules. Define:
+
+\begin{itemize}
+    \item $T_o$, the object function sends each integral domain to its corresponding field of quotients. 
+	\item $T_f$, the arrow function sends each morphism $f$ in $IntDom$ to the induced morphism $T_f(f) : a/b \longmapsto f(a) / f(b)$. 
+\end{itemize}
+
+Since, arrows in $IntDom$ are injective, $b \neq 0 \Longrightarrow f(b) \neq 0$. And:
+
+$ a/b \sim a'/b' \Longrightarrow ab' = a'b \Longrightarrow f(a)f(b') = f(a')f(b) \Longrightarrow f(a)/f(b) \sim f(a')/f(b')$. Therefore, $T_f(f)$ is \textbf{well-defined}. The functor rules 
+$T_f(f \circ g) = T_f(f) \circ T_f(g)$ and $T_f(id_o) = id_{T_o(o)}$ are satisfied; hence, the construction is a functor. 
+
+\vspace{2mm}
+
+\textbf{(b)} \emph{The Lie Algebra of a Lie Group}
+
+skipped; don't know Differential Geometry
+
+\vspace{2mm}
