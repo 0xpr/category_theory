@@ -1,0 +1,29 @@
+\noindent
+\underline{Exercise 8}
+\vspace{2mm}
+
+Consider the category with objects $\langle X, e, t \rangle$, where $X$ is a
+set, $e \in X$, and $t: X \to X$, and with arrows $f: \langle X, e, t \rangle
+\to \langle X', e', t' \rangle$ the functions $f$ on $X$ to $X'$ with $fe = e'$
+and $ft = t'f$. Prove that this category has an initial object in which $X$ is
+the set of natural numbers, $e = 0$, and $t$ is the successor function.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+An object $s$ is \emph{initial} in $C$ if to each object $a$ there is exactly
+one arrow $s \to a$. Let $f: \langle \mathbb{N}, 0, ++ \rangle \to \langle X,
+e, t \rangle$ and $f \circ succ = t \circ f$, where $f : \mathbb{N} \to X$.
+
+We have to prove that there is exactly one such $f$. 
+\begin{itemize}
+    \item $f(0) = e$ 
+    \item $f(n + 1) = t^n \circ f$ for all $n \neq 0$
+\end{itemize}
+    
+Therefore, $f$ is defined for all of $\mathbb{N}$ from the last condition, and
+hence $f: \langle \mathbb{N}, 0, ++ \rangle$ is an initial object.
+
+\vspace{2mm}
