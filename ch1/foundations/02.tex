@@ -1,0 +1,49 @@
+\noindent
+\underline{Exercise 2}
+\vspace{2mm}
+
+\textbf{(a)} Given a universe $U$ and a function $f: I \to b$ with domain $I \in
+U$, show that the usual union $\bigcup_i f_i$ is a set of $U$.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+We must assume $b \subset U$ to prove this. We can employ the same reasoning we
+used in the previous proof.
+
+\vspace{2mm}
+
+\textbf{(b)} Show that this one closure property of $U$ may replace condition
+\textbf{(v)} and the condition $x \in U$ implies $\cup x \in U$ in the
+definition of a universe.
+
+\vspace{2mm}
+
+\noindent
+\emph{Proof}
+
+\vspace{2mm}
+\emph{I} \textbf{(a)} $implies$ \textbf{(v)} 
+
+$f : I \to b$, $b \subset U$ and $f$ is surjective. Then, from \textbf{(a)}, we
+know that $\cup b \in U$. 
+
+$\implies \mathcal{P}(\cup b) \in U$
+
+$\implies \mathcal{P}(\mathcal{P}(\cup b)) \in U$
+
+But, since $b \in \mathcal{P}(\mathcal{P}(\cup b)) \in U$, we have $b \in U$,
+from \textbf{(i)}.
+
+
+\vspace{2mm}
+\emph{II} \textbf{(a)} $implies$ \textbf{(iii) b}
+
+Let $b \in U$. Consider the identity function $i: b \to U$. 
+Then $x \in b \in U \implies x \in U$, from \textbf{(i)}.
+So it is a valid function. Now $Im(i) = b$. From \textbf{(a)}, we know that
+$\bigcup Im(i) \in U$, and so, $\cup b \in U$.
+
+\vspace{2mm}

@@ -2,11 +2,32 @@
 \underline{Exercise 1}
 \vspace{2mm}
 
+Given a universe $U$ and a function $f: I \to b$ with domain $I \in U$ and with
+every value $f_i$ an element of $U$, for $i \in I$, prove that the usual
+cartesian product $\prod_i f_i$ is an element of $U$.
 
 \vspace{2mm}
 
 \noindent
 \emph{Proof}
 
+Refer to pg. 22 for properties of the universe.
+We have to show $\prod_i f_i \in U$. 
+
+\begin{itemize}
+    \item $\prod_i f_i = \{g : I \to \bigcup_i f_i \mid
+        \forall i \cdot g(i) \in f_i \}$.
+    \item $Im(f)$ is a set from the axiom of replacement.
+    \item $Im(f) \subset U$, since every $f_i \in U$.
+    \item Consider a function $f': I \to Im(f)$ formed by restricting the
+        codomain of $f$
+    \item $f'$ is surjective, and from \textbf{(v)}, we know $Im(f) \in U$.
+    \item $\bigcup_i f_i \in U$, from \textbf{(iii)}.
+    \item $I \times \bigcup_i f_i \in U$, from \textbf{(ii)}
+    \item $\mathcal{P}(I \times \bigcup_i f_i) \in U$, from \textbf{(iii)}
+    \item $\prod_i f_i \subset I \times \bigcup_i f_i \implies \prod_i f_i \in 
+        \mathcal{P}(I \times \bigcup_i f_i)$ 
+    \item Hence, $\prod_i f_i \in U$, from \textbf{(i)}.
+\end{itemize}
 
 \vspace{2mm}
